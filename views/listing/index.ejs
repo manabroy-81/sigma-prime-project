@@ -1,0 +1,92 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="container my-4 mt-7">
+    <div class="row g-3 justify-content-center">
+        <div class="col-6  col-md-3 col-lg-2 boxs">
+            <div class="category-box ">
+                <i class="fa-solid fa-fire"></i>
+                <span>Trending</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-bed"></i>
+                <span>Rooms</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-house"></i>
+                <span>Villa</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <span>Beach</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-mountain-sun"></i>
+                <span>Mountain</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-tree"></i>
+                <span>Nature</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-water"></i>
+                <span>Pool</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-campground"></i>
+                <span>Camping</span>
+            </div>
+        </div>
+
+
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-city"></i>
+                <span>City View</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 boxs">
+            <div class="category-box">
+                <i class="fa-solid fa-crown"></i>
+                <span>Luxury</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hero-section"><marquee> Har Din Ka Safar Today</marquee>
+</div>
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-4 ">
+  <% for (let listing of allListing){ %>
+    <a href="/listing/<%=listing._id%>" class="listing-link">
+     <div class="card mx-auto listing-card">
+        <img src="<%= listing.image.url%>" class="card-img-top" style="height: 20rem; "alt="listing-image" >
+        <div class="card-img-overlay">
+             <h5 class="card-title"><button class="wish-btn"><i class="fa-solid fa-heart"></i></button></h5>
+        </div>
+           <div class="card-body">
+             <p class="card-text">
+             <b><%= listing.title%></b>
+             <br>
+             &#8377; <%=listing.price.toLocaleString("en-IN")%> / night
+             </p>
+            </div>
+     </div>
+    </a>
+  <% } %>
+</div>
+

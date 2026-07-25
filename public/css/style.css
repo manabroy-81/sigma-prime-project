@@ -1,0 +1,151 @@
+body{
+font-family: " plus jakarta Poppins", sans-serif !important;
+margin: 0;
+padding: 0;
+display: flex; 
+flex-direction: column;
+min-height: 100vh;
+}
+.Cottage{
+  text-align: center;
+  color: #14532d;
+}
+
+#btn-add{
+    width: 10rem;
+    font-weight: 600;
+    border-radius: 4rem;
+}
+.container{ 
+    flex: 1;
+}
+.hero-section{
+    width: 100%;
+    height: 300px;
+    border-radius: 1.8rem;
+    margin-top: 1rem;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 30px rgb(0,0,0,0.4);
+    font-size: x-large;
+    color: #f54646;
+    font-family: cursive;
+}
+/*navbar */
+.navbar{
+    height: 5rem;  
+    background-color:#fafafa;
+}
+#mountain-city{
+    color: #0213ff;
+}
+.nav-link{
+    color: #222222 !important;
+}
+/*footer*/
+.f-info-link a{
+    text-decoration: none;
+    color: #eef3f2;
+}
+.f-info-link a:hover{
+    text-decoration: underline;
+}
+.f-info-link,.f-info-social,.brand-info{
+    color: #eef3f2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-social a i{
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+    color: #eef3f2;
+    opacity: 0.7;
+}
+ .face :hover{
+    color: #0d7dee;
+}
+.insta :hover{
+    color: rgb(255, 2, 2);
+}
+.link :hover{
+    color: #0d7dee;
+}
+.f-info{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius:0.5rem;
+    text-align: center;
+    height: 8rem;
+    background-color: #0B1F3A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius:0.8rem;
+    width: 100% !important;
+    object-fit: cover !important;   
+}
+.card-body{
+    padding: 0 !important;
+    font-weight: 500 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+/*card effect*/
+.card-img-overlay{
+   display: flex;
+   justify-content: end;
+}
+.wish-btn{
+    background: transparent;
+    border: none;
+}
+.card-img-overlay i{
+    color: #0c0b0c;
+}
+
+/*show page*/
+.show-img{
+    height:30vh;
+}
+.btns{
+    display: flex;
+}
+/* craete new listing*/
+.create-new{
+   font-weight: 550;
+   border:solid #0c0b0c 0.1rem;
+   border-radius: 0.5rem;
+   background-color: rgb(255,255,255,0.92);
+   padding: 35px;
+   box-shadow: 0 8px 30px rgb(0,0,0,0.2);
+    
+}
+.fa-solid{
+    color: #527778;
+    opacity: 0.7;
+}
+.new-background{
+    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1920&q=80');
+    background-size: cover;      
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    height: 100vh;
+}
+.card-image-edit{
+    border-radius: 15px;
+}
+
+
